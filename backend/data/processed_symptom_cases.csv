@@ -1,0 +1,31 @@
+original_text,cleaned_text,fever,headache,cough,chest_pain,shortness_breath,nausea,vomiting,diarrhea,fatigue,dizziness,sore_throat,runny_nose,muscle_pain,abdominal_pain,pain_severity,duration_severity,intensity_severity,age_group,gender,symptom_count,text_length,triage_label,triage_name
+I have a mild headache and feel a bit tired,i have a mild headache and feel a bit tired,False,True,False,False,False,False,False,False,True,False,False,False,False,False,1,0,0,adult,f,2,10,0,self-care
+Severe chest pain and can't breathe properly,severe chest pain and cant breathe properly,False,False,False,True,False,False,False,False,False,False,False,False,False,False,3,0,0,adult,m,1,7,2,emergency
+Running nose and sore throat for 2 days,running nose and sore throat for 2 days,False,False,False,False,False,False,False,False,False,False,True,False,False,False,0,2,0,adult,f,1,8,0,self-care
+High fever with body aches and headache,high fever with body aches and headache,True,True,False,False,False,False,False,False,False,False,False,False,True,False,0,0,0,adult,m,3,7,1,see_doctor
+Stomach pain with nausea and vomiting,stomach pain with nausea and vomiting,False,False,False,False,False,True,True,False,False,False,False,False,False,True,0,0,0,adult,f,3,6,1,see_doctor
+Crushing chest pain radiating to left arm,crushing chest pain radiating to left arm,False,False,False,True,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,1,7,2,emergency
+"Cough and runny nose, feeling okay otherwise","cough and runny nose, feeling okay otherwise",False,False,True,False,False,False,False,False,False,False,False,True,False,False,0,0,0,adult,f,2,7,0,self-care
+Severe headache worst of my life with fever,severe headache worst of my life with fever,True,True,False,False,False,False,False,False,False,False,False,False,False,False,3,0,0,adult,m,2,8,2,emergency
+Mild fever and fatigue for 3 days,mild fever and fatigue for 3 days,True,False,False,False,False,False,False,False,True,False,False,False,False,False,1,2,0,adult,f,2,7,1,see_doctor
+Difficulty breathing and chest tightness,difficulty breathing and chest tightness,False,False,False,False,True,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,1,5,2,emergency
+Sore throat and mild headache,sore throat and mild headache,False,True,False,False,False,False,False,False,False,False,True,False,False,False,1,0,0,adult,f,2,5,0,self-care
+Abdominal pain with fever and vomiting,abdominal pain with fever and vomiting,True,False,False,False,False,False,True,False,False,False,False,False,False,True,0,0,0,adult,m,3,6,1,see_doctor
+Light headache after long day at work,light headache after long day at work,False,True,False,False,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,f,1,7,0,self-care
+Chest pain with dizziness and sweating,chest pain with dizziness and sweating,False,False,False,True,False,False,False,False,False,True,False,False,False,False,0,0,0,adult,m,2,6,2,emergency
+"Runny nose and sneezing, no fever","runny nose and sneezing, no fever",True,False,False,False,False,False,False,False,False,False,False,True,False,False,0,0,0,adult,f,2,6,0,self-care
+High fever with severe body aches,high fever with severe body aches,True,False,False,False,False,False,False,False,False,False,False,False,True,False,3,0,0,adult,m,2,6,1,see_doctor
+Mild stomach upset after eating,mild stomach upset after eating,False,False,False,False,False,False,False,False,False,False,False,False,False,False,1,0,0,adult,f,0,5,0,self-care
+Sudden severe headache with vision problems,sudden severe headache with vision problems,False,True,False,False,False,False,False,False,False,False,False,False,False,False,3,0,0,adult,f,1,6,2,emergency
+Cough with green phlegm and fever,cough with green phlegm and fever,True,False,True,False,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,2,6,1,see_doctor
+Chest pain when breathing deeply,chest pain when breathing deeply,False,False,False,True,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,f,1,5,1,see_doctor
+"Tired and mild headache, working too much","tired and mild headache, working too much",False,True,False,False,False,False,False,False,True,False,False,False,False,False,1,0,0,adult,m,2,7,0,self-care
+Severe abdominal pain with blood in stool,severe abdominal pain with blood in stool,False,False,False,False,False,False,False,False,False,False,False,False,False,True,3,0,0,adult,m,1,7,2,emergency
+Sore throat and mild fever for 1 day,sore throat and mild fever for 1 day,True,False,False,False,False,False,False,False,False,False,True,False,False,False,1,0,0,adult,f,2,8,1,see_doctor
+"Crushing chest pain, feels like heart attack","crushing chest pain, feels like heart attack",False,False,False,True,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,1,7,2,emergency
+"Runny nose and congestion, no other symptoms","runny nose and congestion, no other symptoms",False,False,False,False,False,False,False,False,False,False,False,True,False,False,0,0,0,adult,f,1,7,0,self-care
+Fever and headache with neck stiffness,fever and headache with neck stiffness,True,True,False,False,False,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,2,6,2,emergency
+Mild nausea after eating spicy food,mild nausea after eating spicy food,False,False,False,False,False,True,False,False,False,False,False,False,False,False,1,0,0,adult,f,1,6,0,self-care
+Shortness of breath with chest pain,shortness of breath with chest pain,False,False,False,True,True,False,False,False,False,False,False,False,False,False,0,0,0,adult,m,2,6,2,emergency
+Headache and fatigue after poor sleep,headache and fatigue after poor sleep,False,True,False,False,False,False,False,False,True,False,False,False,False,False,0,0,0,adult,f,2,6,0,self-care
+High fever with severe headache and vomiting,high fever with severe headache and vomiting,True,True,False,False,False,False,True,False,False,False,False,False,False,False,3,0,0,adult,m,3,7,2,emergency

@@ -1,0 +1,9 @@
+{
+  "best_model": "Logistic Regression",
+  "accuracy": 0.6666666666666666,
+  "cv_score": 0.7100000000000001,
+  "model_type": "text",
+  "feature_columns": null,
+  "training_samples": 24,
+  "test_samples": 6
+}
