@@ -1,0 +1,109 @@
+complaint_text,age,gender,triage_label
+"I have a mild headache and feel a bit tired",25,F,0
+"Severe chest pain and can't breathe properly",45,M,2
+"Running nose and sore throat for 2 days",30,F,0
+"High fever with body aches and headache",35,M,1
+"Stomach pain with nausea and vomiting",28,F,1
+"Crushing chest pain radiating to left arm",55,M,2
+"Cough and runny nose, feeling okay otherwise",22,F,0
+"Severe headache worst of my life with fever",40,M,2
+"Mild fever and fatigue for 3 days",32,F,1
+"Difficulty breathing and chest tightness",50,M,2
+"Sore throat and mild headache",26,F,0
+"Abdominal pain with fever and vomiting",38,M,1
+"Light headache after long day at work",29,F,0
+"Chest pain with dizziness and sweating",48,M,2
+"Runny nose and sneezing, no fever",24,F,0
+"High fever with severe body aches",42,M,1
+"Mild stomach upset after eating",31,F,0
+"Sudden severe headache with vision problems",45,F,2
+"Cough with green phlegm and fever",36,M,1
+"Chest pain when breathing deeply",41,F,1
+"Tired and mild headache, working too much",27,M,0
+"Severe abdominal pain with blood in stool",52,M,2
+"Sore throat and mild fever for 1 day",33,F,1
+"Crushing chest pain, feels like heart attack",58,M,2
+"Runny nose and congestion, no other symptoms",23,F,0
+"Fever and headache with neck stiffness",39,M,2
+"Mild nausea after eating spicy food",26,F,0
+"Shortness of breath with chest pain",47,M,2
+"Headache and fatigue after poor sleep",28,F,0
+"High fever with severe headache and vomiting",44,M,2
+"Severe headache at back of head with confusion",35,M,2
+"My brain feels like it's missing, severe head pain",42,F,2
+"Worst headache of my life, sudden onset",38,M,2
+"Head injury with severe pain and dizziness",29,M,2
+"Severe headache with loss of consciousness",45,F,2
+"Brain fog with intense headache and nausea",33,F,2
+"Head trauma, severe pain, can't think clearly",27,M,2
+"Excruciating headache, feels like brain damage",41,F,2
+"Severe head pain after fall, confusion",36,M,2
+"Intense headache with memory problems",39,F,2
+"Chest pain radiating to jaw and arm",55,M,2
+"Severe difficulty breathing, gasping for air",48,F,2
+"Crushing chest pressure with sweating",62,M,2
+"Can't breathe, chest feels tight",34,F,2
+"Heart racing with severe chest pain",29,M,2
+"Chest pain with fainting spells",51,F,2
+"Severe allergic reaction, swelling face",25,F,2
+"Anaphylaxis symptoms, difficulty swallowing",33,M,2
+"Severe bleeding that won't stop",28,F,2
+"Heavy bleeding from injury",45,M,2
+"Signs of stroke, slurred speech",67,F,2
+"Sudden weakness on one side of body",59,M,2
+"Loss of vision suddenly",43,F,2
+"Seizure episode with confusion",31,M,2
+"Unconscious for several minutes",37,F,2
+"Severe burn covering large area",24,M,2
+"Deep cut with heavy bleeding",26,F,2
+"Broken bone sticking out of skin",22,M,2
+"High fever over 104F with chills",35,F,1
+"Persistent cough with blood",42,M,1
+"Severe abdominal pain for hours",38,F,1
+"Vomiting blood",45,M,2
+"Severe dehydration, can't keep fluids down",29,F,1
+"Persistent fever for 5 days",33,M,1
+"Severe diarrhea with blood",31,F,1
+"Intense abdominal cramping",27,F,1
+"Fever with severe headache and stiff neck",40,M,2
+"Rash spreading rapidly over body",25,F,1
+"Severe joint pain and swelling",50,M,1
+"Persistent chest pain for days",46,F,1
+"Difficulty swallowing with throat pain",34,M,1
+"Severe back pain radiating to leg",41,F,1
+"Persistent nausea and vomiting",28,F,1
+"High blood pressure symptoms",55,M,1
+"Diabetic complications, high blood sugar",48,F,1
+"Severe migraine lasting days",32,F,1
+"Persistent dizziness and balance problems",37,M,1
+"Severe fatigue lasting weeks",29,F,1
+"Mild cold symptoms, runny nose",24,F,0
+"Light cough, no fever",26,M,0
+"Minor headache from stress",30,F,0
+"Slight sore throat",28,M,0
+"Mild congestion",25,F,0
+"Light fatigue after exercise",32,M,0
+"Minor muscle soreness",27,F,0
+"Slight nausea after eating",29,M,0
+"Mild indigestion",31,F,0
+"Light dizziness when standing",26,M,0
+"Minor skin irritation",24,F,0
+"Slight joint stiffness in morning",35,M,0
+"Mild anxiety symptoms",28,F,0
+"Light insomnia",30,M,0
+"Minor allergic reaction, sneezing",27,F,0
+"Slight eye irritation",29,M,0
+"Mild dry cough",25,F,0
+"Light stomach discomfort",32,M,0
+"Minor bruising from bump",26,F,0
+"Slight muscle cramp",28,M,0
+"I think my brain is damaged, severe head trauma",34,M,2
+"Head feels like it's going to explode",29,F,2
+"Severe concussion symptoms",31,M,2
+"Brain injury from accident",27,F,2
+"Neurological symptoms, can't think straight",38,M,2
+"Head trauma with bleeding",25,F,2
+"Severe brain fog and confusion",42,M,2
+"Traumatic brain injury symptoms",35,F,2
+"Severe headache with personality changes",40,M,2
+"Brain feels swollen, intense pressure",33,F,2
