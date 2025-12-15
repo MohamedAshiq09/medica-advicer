@@ -34,34 +34,53 @@ class SafetyLayerAgent:
                 "crushing chest pain", 
                 "chest pain radiating",
                 "chest pain with shortness of breath",
-                "heart attack symptoms"
+                "heart attack symptoms",
+                "chest pressure",
+                "chest tightness"
             ],
             
             "respiratory_emergency": [
                 "severe difficulty breathing",
                 "cannot breathe",
+                "can't breathe",
                 "gasping for air",
                 "blue lips",
-                "blue fingernails"
+                "blue fingernails",
+                "shortness of breath"
             ],
             
             "neurological_emergency": [
                 "sudden severe headache",
                 "worst headache of life",
+                "worst headache of my life",
                 "loss of consciousness",
                 "fainting",
                 "seizure",
                 "stroke symptoms",
                 "sudden confusion",
                 "sudden vision loss",
-                "sudden speech problems"
+                "sudden speech problems",
+                "brain missing",
+                "brain damage",
+                "brain injury",
+                "head trauma",
+                "severe head pain",
+                "brain feels",
+                "neurological symptoms",
+                "can't think straight",
+                "personality changes",
+                "memory problems",
+                "confusion",
+                "head injury"
             ],
             
             "severe_bleeding": [
                 "severe bleeding",
                 "heavy bleeding",
                 "bleeding that won't stop",
-                "internal bleeding"
+                "internal bleeding",
+                "vomiting blood",
+                "blood in stool"
             ],
             
             "allergic_emergency": [
@@ -76,7 +95,10 @@ class SafetyLayerAgent:
                 "severe injury",
                 "broken bone",
                 "head injury",
-                "severe burn"
+                "severe burn",
+                "traumatic brain injury",
+                "head trauma",
+                "brain trauma"
             ]
         }
     
@@ -99,8 +121,18 @@ class SafetyLayerAgent:
                 "priority": "immediate"
             },
             {
-                "symptoms": ["severe_headache", "fever", "vomiting"],
+                "symptoms": ["headache", "fever", "vomiting"],
                 "description": "Severe headache with fever and vomiting",
+                "priority": "immediate"
+            },
+            {
+                "symptoms": ["headache", "confusion"],
+                "description": "Severe headache with confusion",
+                "priority": "immediate"
+            },
+            {
+                "symptoms": ["headache", "vision_problems"],
+                "description": "Severe headache with vision problems",
                 "priority": "immediate"
             },
             {
@@ -111,6 +143,11 @@ class SafetyLayerAgent:
             {
                 "symptoms": ["shortness_breath", "chest_pain", "fatigue"],
                 "description": "Multiple cardiac symptoms",
+                "priority": "immediate"
+            },
+            {
+                "symptoms": ["fever", "headache", "neck_stiffness"],
+                "description": "Possible meningitis symptoms",
                 "priority": "immediate"
             }
         ]
