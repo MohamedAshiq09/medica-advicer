@@ -1,0 +1,31 @@
+complaint_text,age,gender,triage_label
+"I have a mild headache and feel a bit tired",25,F,0
+"Severe chest pain and can't breathe properly",45,M,2
+"Running nose and sore throat for 2 days",30,F,0
+"High fever with body aches and headache",35,M,1
+"Stomach pain with nausea and vomiting",28,F,1
+"Crushing chest pain radiating to left arm",55,M,2
+"Cough and runny nose, feeling okay otherwise",22,F,0
+"Severe headache worst of my life with fever",40,M,2
+"Mild fever and fatigue for 3 days",32,F,1
+"Difficulty breathing and chest tightness",50,M,2
+"Sore throat and mild headache",26,F,0
+"Abdominal pain with fever and vomiting",38,M,1
+"Light headache after long day at work",29,F,0
+"Chest pain with dizziness and sweating",48,M,2
+"Runny nose and sneezing, no fever",24,F,0
+"High fever with severe body aches",42,M,1
+"Mild stomach upset after eating",31,F,0
+"Sudden severe headache with vision problems",45,F,2
+"Cough with green phlegm and fever",36,M,1
+"Chest pain when breathing deeply",41,F,1
+"Tired and mild headache, working too much",27,M,0
+"Severe abdominal pain with blood in stool",52,M,2
+"Sore throat and mild fever for 1 day",33,F,1
+"Crushing chest pain, feels like heart attack",58,M,2
+"Runny nose and congestion, no other symptoms",23,F,0
+"Fever and headache with neck stiffness",39,M,2
+"Mild nausea after eating spicy food",26,F,0
+"Shortness of breath with chest pain",47,M,2
+"Headache and fatigue after poor sleep",28,F,0
+"High fever with severe headache and vomiting",44,M,2
