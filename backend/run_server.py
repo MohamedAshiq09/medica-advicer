@@ -14,16 +14,16 @@ sys.path.insert(0, str(backend_dir))
 if __name__ == "__main__":
     print("🏥 Starting Medical Symptoms Checker API...")
     print("=" * 50)
-    print("📍 Server will be available at: http://localhost:8000")
-    print("📚 API Documentation: http://localhost:8000/docs")
-    print("🔍 Health Check: http://localhost:8000/health")
+    print("📍 Server will be available at: http://localhost:8001")
+    print("📚 API Documentation: http://localhost:8001/docs")
+    print("🔍 Health Check: http://localhost:8001/health")
     print("=" * 50)
     
     # Run the server
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=8000,
+        port=8001,
         reload=True,
         log_level="info"
     )
