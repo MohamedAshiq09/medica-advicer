@@ -66,33 +66,49 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
   return (
     <div className="space-y-6">
       {/* Main Recommendation */}
-      <div className={`border-2 rounded-xl p-6 ${getTriageColor(results.triage_level)}`}>
+      <div className={`border rounded-3xl p-6 ${
+        results.triage_level === 'emergency' ? 'bg-red-50 border-red-300' :
+        results.triage_level === 'see_doctor' ? 'bg-yellow-50 border-yellow-300' :
+        'bg-green-50 border-green-300'
+      }`}>
         <div className="flex items-center space-x-3 mb-4">
           {getTriageIcon(results.triage_level)}
-          <h3 className="text-xl font-bold">
+          <h3 className={`text-xl font-light ${
+            results.triage_level === 'emergency' ? 'text-red-900' :
+            results.triage_level === 'see_doctor' ? 'text-yellow-900' :
+            'text-green-900'
+          }`}>
             {getTriageTitle(results.triage_level)}
           </h3>
-          <span className="text-sm font-medium bg-white/50 dark:bg-black/20 px-2 py-1 rounded">
-            {formatConfidence(results.confidence)} confidence
+          <span className={`text-sm font-light px-3 py-1 rounded-full ${
+            results.triage_level === 'emergency' ? 'bg-red-200 text-red-900' :
+            results.triage_level === 'see_doctor' ? 'bg-yellow-200 text-yellow-900' :
+            'bg-green-200 text-green-900'
+          }`}>
+            {formatConfidence(results.confidence)}
           </span>
         </div>
         
-        <div className="prose prose-sm max-w-none">
-          <p className="whitespace-pre-line">{results.explanation}</p>
+        <div className={`whitespace-pre-line text-sm font-light ${
+          results.triage_level === 'emergency' ? 'text-red-800' :
+          results.triage_level === 'see_doctor' ? 'text-yellow-800' :
+          'text-green-800'
+        }`}>
+          {results.explanation}
         </div>
       </div>
 
       {/* Detected Symptoms */}
       {results.detected_symptoms.length > 0 && (
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+        <div className="bg-white border border-gray-200 rounded-3xl shadow-sm p-6">
+          <h4 className="text-lg font-light text-black mb-4">
             Detected Symptoms
           </h4>
           <div className="flex flex-wrap gap-2">
             {results.detected_symptoms.map((symptom, index) => (
               <span
                 key={index}
-                className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium"
+                className="bg-gray-100 text-gray-900 px-3 py-1 rounded-full text-sm font-light border border-gray-300"
               >
                 {symptom.replace('_', ' ')}
               </span>
@@ -102,18 +118,18 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
       )}
 
       {/* Probability Breakdown */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+      <div className="bg-white border border-gray-200 rounded-3xl shadow-sm p-6">
+        <h4 className="text-lg font-light text-black mb-4">
           Assessment Breakdown
         </h4>
         <div className="space-y-3">
           {Object.entries(results.probabilities).map(([level, probability]) => (
             <div key={level} className="flex items-center justify-between">
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300 capitalize">
+              <span className="text-sm font-light text-gray-900 capitalize">
                 {level.replace('_', ' ').replace('-', ' ')}
               </span>
               <div className="flex items-center space-x-2">
-                <div className="w-32 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div className="w-32 bg-gray-200 rounded-full h-2">
                   <div
                     className={`h-2 rounded-full ${
                       level === 'emergency' ? 'bg-red-500' :
@@ -123,7 +139,7 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
                     style={{ width: `${probability * 100}%` }}
                   />
                 </div>
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400 w-12 text-right">
+                <span className="text-sm font-light text-gray-700 w-12 text-right">
                   {formatConfidence(probability)}
                 </span>
               </div>
@@ -134,14 +150,14 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
 
       {/* Follow-up Questions */}
       {results.follow_up_questions.length > 0 && (
-        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
-          <h4 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-4">
+        <div className="bg-gray-50 border border-gray-200 rounded-3xl p-6">
+          <h4 className="text-lg font-light text-black mb-4">
             Additional Questions to Consider
           </h4>
           <ul className="space-y-2">
             {results.follow_up_questions.map((question, index) => (
-              <li key={index} className="text-sm text-blue-800 dark:text-blue-200 flex items-start">
-                <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+              <li key={index} className="text-sm text-gray-700 flex items-start font-light">
+                <span className="text-gray-900 mr-2">•</span>
                 {question}
               </li>
             ))}
@@ -151,18 +167,18 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
 
       {/* Applied Rules/Overrides */}
       {(results.applied_overrides.length > 0 || results.applied_rules.length > 0) && (
-        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
-          <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+        <div className="bg-white border border-gray-200 rounded-3xl p-6">
+          <h4 className="text-lg font-light text-black mb-4">
             Assessment Details
           </h4>
           
           {results.applied_overrides.length > 0 && (
             <div className="mb-4">
-              <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <h5 className="text-sm font-light text-gray-900 mb-2">
                 Safety Overrides Applied:
               </h5>
               {results.applied_overrides.map((override, index) => (
-                <div key={index} className="text-sm text-gray-600 dark:text-gray-400 bg-white dark:bg-gray-800 p-2 rounded mb-2">
+                <div key={index} className="text-sm text-gray-700 bg-gray-50 p-2 rounded-lg mb-2 border border-gray-200 font-light">
                   <span className="font-medium">{override.type}:</span> {override.reason}
                 </div>
               ))}
@@ -171,11 +187,11 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
 
           {results.applied_rules.length > 0 && (
             <div>
-              <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <h5 className="text-sm font-light text-gray-900 mb-2">
                 Pattern Rules Applied:
               </h5>
               {results.applied_rules.map((rule, index) => (
-                <div key={index} className="text-sm text-gray-600 dark:text-gray-400 bg-white dark:bg-gray-800 p-2 rounded mb-2">
+                <div key={index} className="text-sm text-gray-700 bg-gray-50 p-2 rounded-lg mb-2 border border-gray-200 font-light">
                   <span className="font-medium">Rule:</span> {rule.symptoms?.join(' + ')} → {rule.action}
                   {rule.confidence && <span className="ml-2">({formatConfidence(rule.confidence)} confidence)</span>}
                 </div>
@@ -189,14 +205,14 @@ export default function ResultsDisplay({ results, onReset }: ResultsDisplayProps
       <div className="flex justify-center space-x-4">
         <button
           onClick={onReset}
-          className="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200"
+          className="bg-black hover:bg-gray-900 text-white font-light py-3 px-8 rounded-full transition-all duration-200 shadow-sm hover:shadow-md"
         >
           Check New Symptoms
         </button>
       </div>
 
       {/* Timestamp */}
-      <div className="text-center text-xs text-gray-500 dark:text-gray-400">
+      <div className="text-center text-xs text-gray-600 font-light">
         Assessment completed at {new Date(results.timestamp).toLocaleString()}
       </div>
     </div>

@@ -40,20 +40,20 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Symptom Description */}
       <div>
-        <label htmlFor="symptoms" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+        <label htmlFor="symptoms" className="block text-sm font-light text-gray-900 mb-2">
           Describe your symptoms in detail *
         </label>
         <textarea
           id="symptoms"
           rows={4}
-          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white resize-none"
+          className="w-full px-4 py-3 border border-gray-300 rounded-2xl shadow-sm focus:ring-2 focus:ring-black focus:border-black bg-white text-black placeholder-gray-400 resize-none transition-all font-light"
           placeholder="Example: I have a severe headache, fever, and feel nauseous. The headache started this morning and is getting worse..."
           value={formData.text}
           onChange={handleTextChange}
           required
           disabled={isLoading}
         />
-        <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-xs text-gray-600 font-light">
           Be as specific as possible about your symptoms, their severity, and duration.
         </p>
       </div>
@@ -62,7 +62,7 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Age */}
         <div>
-          <label htmlFor="age" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label htmlFor="age" className="block text-sm font-light text-gray-900 mb-2">
             Age (optional)
           </label>
           <input
@@ -70,7 +70,7 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
             id="age"
             min="0"
             max="120"
-            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-3 border border-gray-300 rounded-2xl shadow-sm focus:ring-2 focus:ring-black focus:border-black bg-white text-black placeholder-gray-400 transition-all font-light"
             placeholder="Enter your age"
             value={formData.age || ''}
             onChange={handleAgeChange}
@@ -80,12 +80,12 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
 
         {/* Gender */}
         <div>
-          <label htmlFor="gender" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label htmlFor="gender" className="block text-sm font-light text-gray-900 mb-2">
             Gender (optional)
           </label>
           <select
             id="gender"
-            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-3 border border-gray-300 rounded-2xl shadow-sm focus:ring-2 focus:ring-black focus:border-black bg-white text-black transition-all font-light"
             value={formData.gender || ''}
             onChange={handleGenderChange}
             disabled={isLoading}
@@ -99,11 +99,11 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
       </div>
 
       {/* Submit Button */}
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-4">
         <button
           type="submit"
           disabled={!formData.text.trim() || isLoading}
-          className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200 flex items-center space-x-2"
+          className="bg-black hover:bg-gray-900 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-light py-3 px-8 rounded-full transition-all duration-200 flex items-center space-x-2 shadow-sm hover:shadow-md"
         >
           {isLoading ? (
             <>
@@ -111,7 +111,7 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
-              Analyzing Symptoms...
+              Analyzing...
             </>
           ) : (
             <>
@@ -125,15 +125,15 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
       </div>
 
       {/* Sample Inputs */}
-      <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-        <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+      <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-2xl">
+        <h4 className="text-sm font-light text-gray-900 mb-3">
           Try these sample inputs:
         </h4>
         <div className="space-y-2">
           <button
             type="button"
             onClick={() => setFormData(prev => ({ ...prev, text: "I have a mild headache and feel tired after working long hours" }))}
-            className="block w-full text-left text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+            className="block w-full text-left text-sm text-gray-700 hover:text-black transition-colors pl-3 py-1 font-light"
             disabled={isLoading}
           >
             • Mild headache and fatigue
@@ -141,7 +141,7 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
           <button
             type="button"
             onClick={() => setFormData(prev => ({ ...prev, text: "I have severe chest pain and difficulty breathing that started suddenly" }))}
-            className="block w-full text-left text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+            className="block w-full text-left text-sm text-gray-700 hover:text-black transition-colors pl-3 py-1 font-light"
             disabled={isLoading}
           >
             • Chest pain with breathing difficulty
@@ -149,7 +149,7 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
           <button
             type="button"
             onClick={() => setFormData(prev => ({ ...prev, text: "I have a runny nose, sore throat, and mild fever for 2 days" }))}
-            className="block w-full text-left text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+            className="block w-full text-left text-sm text-gray-700 hover:text-black transition-colors pl-3 py-1 font-light"
             disabled={isLoading}
           >
             • Cold-like symptoms
