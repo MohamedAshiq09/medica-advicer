@@ -84,29 +84,23 @@ class ImprovedModelInferenceAgent:
         # Text features via TF-IDF
         text_vec = self.vectorizer.transform([complaint_text]).toarray()
         
-        # Age features
+        # Age and gender features (simple encoding)
         age = age or 40  # Default to adult age
-        age_features = np.array([[
-            age,
-            age ** 2,
-            1 if age < 12 else 0,      # is_child
-            1 if age >= 65 else 0,     # is_elderly
-            1 if (age < 5 or age >= 60) else 0  # is_high_risk_age
-        ]])
-        
-        # Gender features
         gender = (gender or 'M').upper()
-        gender_features = np.array([[
-            1 if gender == 'M' else 0,  # is_male
-            1 if gender == 'F' else 0   # is_female
+        
+        age_gender_features = np.array([[
+            age,
+            1 if gender == 'M' else 0  # is_male
         ]])
         
         # Combine all features
-        X = np.hstack([text_vec, age_features, gender_features])
+        X = np.hstack([text_vec, age_gender_features])
         
-        # Scale features
+        # Scale only the age/gender features (text is already normalized by TF-IDF)
         if self.scaler:
-            X = self.scaler.transform(X)
+            # Only scale the age/gender part
+            age_gender_scaled = self.scaler.transform(age_gender_features)
+            X = np.hstack([text_vec, age_gender_scaled])
         
         return X
     
