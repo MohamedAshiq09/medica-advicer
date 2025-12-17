@@ -1,0 +1,5 @@
+{"timestamp": "2025-12-17T09:46:28.266352", "symptoms": ["fever", "headache"], "predicted_label": "see_doctor", "correct_label": "self-care", "user_notes": "Mild fever, managed at home", "severity_info": {}, "was_correct": false}
+{"timestamp": "2025-12-17T09:46:41.716225", "symptoms": ["fever", "headache"], "predicted_label": "see_doctor", "correct_label": "self-care", "user_notes": "Mild fever, managed at home", "severity_info": {}, "was_correct": false}
+{"timestamp": "2025-12-17T09:46:41.720224", "symptoms": ["cough", "runny_nose"], "predicted_label": "self-care", "correct_label": "self-care", "user_notes": "Common cold", "severity_info": {}, "was_correct": true}
+{"timestamp": "2025-12-17T09:46:41.721541", "symptoms": ["chest_pain", "shortness_breath"], "predicted_label": "see_doctor", "correct_label": "emergency", "user_notes": "Severe symptoms", "severity_info": {}, "was_correct": false}
+{"timestamp": "2025-12-17T09:46:41.721541", "symptoms": ["headache", "fever"], "predicted_label": "see_doctor", "correct_label": "self-care", "user_notes": "Mild symptoms", "severity_info": {}, "was_correct": false}

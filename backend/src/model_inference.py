@@ -2,6 +2,7 @@
 Model Inference Agent - Handles ML model loading and prediction
 Responsibility: Load trained models and provide triage predictions
 """
+import warnings
 import joblib
 import numpy as np
 import pandas as pd
@@ -16,6 +17,9 @@ from .config import (
     TRIAGE_LEVELS,
     MIN_CONFIDENCE_THRESHOLD
 )
+
+# Suppress scikit-learn version warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn')
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
