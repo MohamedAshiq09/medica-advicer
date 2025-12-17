@@ -2,6 +2,13 @@
 
 import { useState } from 'react'
 import { SymptomInput } from '@/types/api'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 interface SymptomFormProps {
   onSubmit: (data: SymptomInput) => void
@@ -31,8 +38,8 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
     setFormData(prev => ({ ...prev, age }))
   }
 
-  const handleGenderChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const gender = e.target.value || undefined
+  const handleGenderChange = (value: string) => {
+    const gender = value || undefined
     setFormData(prev => ({ ...prev, gender }))
   }
 
@@ -80,21 +87,19 @@ export default function SymptomForm({ onSubmit, isLoading }: SymptomFormProps) {
 
         {/* Gender */}
         <div>
-          <label htmlFor="gender" className="block text-sm font-light text-gray-900 mb-2">
+          <label className="block text-sm font-light text-gray-900 mb-2">
             Gender (optional)
           </label>
-          <select
-            id="gender"
-            className="w-full px-4 py-3 border border-gray-300 rounded-2xl shadow-sm focus:ring-2 focus:ring-black focus:border-black bg-white text-black transition-all font-light"
-            value={formData.gender || ''}
-            onChange={handleGenderChange}
-            disabled={isLoading}
-          >
-            <option value="">Select gender</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-            <option value="Other">Other</option>
-          </select>
+          <Select value={formData.gender || ''} onValueChange={handleGenderChange} disabled={isLoading}>
+            <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-2xl shadow-sm focus:ring-2 focus:ring-black focus:border-black !bg-white text-black transition-all font-light h-auto">
+              <SelectValue placeholder="Select gender" />
+            </SelectTrigger>
+            <SelectContent className="rounded-2xl !bg-black !text-white border-black">
+              <SelectItem value="M" className="!text-white hover:!bg-gray-900">Male</SelectItem>
+              <SelectItem value="F" className="!text-white hover:!bg-gray-900">Female</SelectItem>
+              <SelectItem value="Other" className="!text-white hover:!bg-gray-900">Other</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
       </div>
 

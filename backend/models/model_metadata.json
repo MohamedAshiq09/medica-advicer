@@ -1,9 +1,58 @@
 {
-  "best_model": "Logistic Regression",
-  "accuracy": 0.6666666666666666,
-  "cv_score": 0.7100000000000001,
-  "model_type": "text",
-  "feature_columns": null,
-  "training_samples": 24,
-  "test_samples": 6
+  "model_type": "GradientBoostingClassifier",
+  "features": "hybrid (text + age + gender)",
+  "triage_levels": {
+    "0": "self-care",
+    "1": "see_doctor",
+    "2": "emergency"
+  },
+  "training_samples": 393,
+  "includes_age": true,
+  "includes_gender": true,
+  "training_date": "2025-12-17T11:27:52.049778",
+  "performance_metrics": {
+    "accuracy": 0.9240506329113924,
+    "precision": 0.9235407606171183,
+    "recall": 0.9240506329113924,
+    "f1": 0.9231612563670261
+  },
+  "dataset_statistics": {
+    "total_samples": 393,
+    "distribution": {
+      "self-care": 145,
+      "see_doctor": 141,
+      "emergency": 107
+    },
+    "age_stats": {
+      "mean": 40.93893129770992,
+      "min": 1,
+      "max": 92,
+      "std": 24.33443297976755
+    },
+    "gender_distribution": {
+      "M": 201,
+      "F": 192
+    }
+  },
+  "feature_engineering": {
+    "text_vectorizer": "TfidfVectorizer",
+    "max_text_features": 100,
+    "age_normalization": "min-max scaling",
+    "gender_encoding": "label encoding"
+  },
+  "model_preferences": {
+    "emergency_sensitivity": "high",
+    "false_negative_penalty": "critical for emergency cases",
+    "age_weight": "significant for elderly and pediatric cases",
+    "gender_considerations": "included for medical accuracy"
+  },
+  "feedback_integration": {
+    "user_feedback_samples": 5,
+    "feedback_accuracy_improvement": "integrated into training"
+  },
+  "quality_metrics": {
+    "cross_validation_enabled": true,
+    "test_split_ratio": 0.2,
+    "random_state": 42
+  }
 }

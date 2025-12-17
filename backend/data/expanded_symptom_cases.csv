@@ -1,0 +1,389 @@
+complaint_text,age,gender,triage_label
+"I have a mild headache and feel a bit tired",25,F,0
+"Severe chest pain and can't breathe properly",45,M,2
+"Running nose and sore throat for 2 days",30,F,0
+"High fever with body aches and headache",35,M,1
+"Stomach pain with nausea and vomiting",28,F,1
+"Crushing chest pain radiating to left arm",55,M,2
+"Cough and runny nose, feeling okay otherwise",22,F,0
+"Severe headache worst of my life with fever",40,M,2
+"Mild fever and fatigue for 3 days",32,F,1
+"Difficulty breathing and chest tightness",50,M,2
+"Sore throat and mild headache",26,F,0
+"Abdominal pain with fever and vomiting",38,M,1
+"Light headache after long day at work",29,F,0
+"Chest pain with dizziness and sweating",48,M,2
+"Runny nose and sneezing, no fever",24,F,0
+"High fever with severe body aches",42,M,1
+"Mild stomach upset after eating",31,F,0
+"Sudden severe headache with vision problems",45,F,2
+"Cough with green phlegm and fever",36,M,1
+"Chest pain when breathing deeply",41,F,1
+"Tired and mild headache, working too much",27,M,0
+"Severe abdominal pain with blood in stool",52,M,2
+"Sore throat and mild fever for 1 day",33,F,1
+"Crushing chest pain, feels like heart attack",58,M,2
+"Runny nose and congestion, no other symptoms",23,F,0
+"Fever and headache with neck stiffness",39,M,2
+"Mild nausea after eating spicy food",26,F,0
+"Shortness of breath with chest pain",47,M,2
+"Headache and fatigue after poor sleep",28,F,0
+"High fever with severe headache and vomiting",44,M,2
+"Severe headache at back of head with confusion",35,M,2
+"My brain feels like it's missing, severe head pain",42,F,2
+"Worst headache of my life, sudden onset",38,M,2
+"Head injury with severe pain and dizziness",29,M,2
+"Severe headache with loss of consciousness",45,F,2
+"Brain fog with intense headache and nausea",33,F,2
+"Head trauma, severe pain, can't think clearly",27,M,2
+"Excruciating headache, feels like brain damage",41,F,2
+"Severe head pain after fall, confusion",36,M,2
+"Intense headache with memory problems",39,F,2
+"Chest pain radiating to jaw and arm",55,M,2
+"Severe difficulty breathing, gasping for air",48,F,2
+"Crushing chest pressure with sweating",62,M,2
+"Can't breathe, chest feels tight",34,F,2
+"Heart racing with severe chest pain",29,M,2
+"Chest pain with fainting spells",51,F,2
+"Severe allergic reaction, swelling face",25,F,2
+"Anaphylaxis symptoms, difficulty swallowing",33,M,2
+"Severe bleeding that won't stop",28,F,2
+"Heavy bleeding from injury",45,M,2
+"Signs of stroke, slurred speech",67,F,2
+"Sudden weakness on one side of body",59,M,2
+"Loss of vision suddenly",43,F,2
+"Seizure episode with confusion",31,M,2
+"Unconscious for several minutes",37,F,2
+"Severe burn covering large area",24,M,2
+"Deep cut with heavy bleeding",26,F,2
+"Broken bone sticking out of skin",22,M,2
+"High fever over 104F with chills",35,F,1
+"Persistent cough with blood",42,M,1
+"Severe abdominal pain for hours",38,F,1
+"Vomiting blood",45,M,2
+"Severe dehydration, can't keep fluids down",29,F,1
+"Persistent fever for 5 days",33,M,1
+"Severe diarrhea with blood",31,F,1
+"Intense abdominal cramping",27,F,1
+"Fever with severe headache and stiff neck",40,M,2
+"Rash spreading rapidly over body",25,F,1
+"Severe joint pain and swelling",50,M,1
+"Persistent chest pain for days",46,F,1
+"Difficulty swallowing with throat pain",34,M,1
+"Severe back pain radiating to leg",41,F,1
+"Persistent nausea and vomiting",28,F,1
+"High blood pressure symptoms",55,M,1
+"Diabetic complications, high blood sugar",48,F,1
+"Severe migraine lasting days",32,F,1
+"Persistent dizziness and balance problems",37,M,1
+"Severe fatigue lasting weeks",29,F,1
+"Mild cold symptoms, runny nose",24,F,0
+"Light cough, no fever",26,M,0
+"Minor headache from stress",30,F,0
+"Slight sore throat",28,M,0
+"Mild congestion",25,F,0
+"Light fatigue after exercise",32,M,0
+"Minor muscle soreness",27,F,0
+"Slight nausea after eating",29,M,0
+"Mild indigestion",31,F,0
+"Light dizziness when standing",26,M,0
+"Minor skin irritation",24,F,0
+"Slight joint stiffness in morning",35,M,0
+"Mild anxiety symptoms",28,F,0
+"Light insomnia",30,M,0
+"Minor allergic reaction, sneezing",27,F,0
+"Slight eye irritation",29,M,0
+"Mild dry cough",25,F,0
+"Light stomach discomfort",32,M,0
+"Minor bruising from bump",26,F,0
+"Slight muscle cramp",28,M,0
+"I think my brain is damaged, severe head trauma",34,M,2
+"Head feels like it's going to explode",29,F,2
+"Severe concussion symptoms",31,M,2
+"Brain injury from accident",27,F,2
+"Neurological symptoms, can't think straight",38,M,2
+"Head trauma with bleeding",25,F,2
+"Severe brain fog and confusion",42,M,2
+"Traumatic brain injury symptoms",35,F,2
+"Severe headache with personality changes",40,M,2
+"Brain feels swollen, intense pressure",33,F,2
+"Chest pain in elderly patient with shortness of breath",72,M,2
+"Severe chest pain radiating to back",68,F,2
+"Acute chest pain with heart palpitations",75,M,2
+"Chest tightness and difficulty breathing in senior",70,F,2
+"Sudden severe chest pain in 65 year old",65,M,2
+"Chest pain with weakness in elderly",73,F,2
+"Acute myocardial infarction symptoms",69,M,2
+"Severe chest pain with confusion in senior",71,F,2
+"Chest pain and shortness of breath in 74 year old",74,M,2
+"Acute chest pain with dizziness in elderly",66,F,2
+"Fever and confusion in elderly patient",78,M,1
+"High fever with delirium in senior",76,F,1
+"Fever with altered mental status in 80 year old",80,M,1
+"Persistent fever and weakness in elderly",77,F,1
+"Fever with severe fatigue in senior",79,M,1
+"High fever with chills in 75 year old",75,F,1
+"Fever and body aches in elderly patient",81,M,1
+"Persistent fever with confusion in senior",82,F,1
+"Fever and headache in 73 year old",73,M,1
+"High fever with severe malaise in elderly",84,F,1
+"Mild fever in young child with cough",4,M,1
+"High fever in toddler with rash",3,F,1
+"Fever and vomiting in 2 year old",2,M,1
+"Severe fever in infant with lethargy",1,F,2
+"Fever with difficulty breathing in young child",5,M,2
+"High fever and seizure in toddler",4,F,2
+"Fever with severe dehydration in child",3,M,1
+"Persistent fever in young child",6,F,1
+"Fever with rash in 5 year old",5,M,1
+"High fever with confusion in child",7,F,1
+"Chest pain in young adult after exercise",21,M,0
+"Mild chest discomfort in 20 year old",20,F,0
+"Chest tightness after stress",22,M,0
+"Slight chest pain with anxiety",23,F,0
+"Chest discomfort in young athlete",19,M,0
+"Mild chest pain after running",21,F,0
+"Chest tightness with panic attack",24,M,0
+"Slight chest pain with deep breathing",20,F,0
+"Chest discomfort after heavy lifting",25,M,0
+"Mild chest pain with stress",22,F,0
+"Severe chest pain in 50 year old male with risk factors",50,M,2
+"Acute chest pain in 55 year old with hypertension",55,M,2
+"Severe chest pain in 60 year old smoker",60,M,2
+"Chest pain with sweating in 52 year old",52,M,2
+"Acute chest pain in 58 year old with diabetes",58,M,2
+"Severe chest pain in 65 year old with family history",65,M,2
+"Chest pain with shortness of breath in 48 year old",48,M,2
+"Acute chest pain in 56 year old",56,M,2
+"Severe chest pain in 61 year old",61,M,2
+"Chest pain with dizziness in 54 year old",54,M,2
+"Mild headache in young adult",21,F,0
+"Light headache from screen time",23,M,0
+"Slight headache with stress",22,F,0
+"Mild headache after sleep",24,M,0
+"Light headache from dehydration",20,F,0
+"Slight headache with tension",25,M,0
+"Mild headache after work",21,F,0
+"Light headache from caffeine withdrawal",23,M,0
+"Slight headache with poor posture",22,F,0
+"Mild headache from eye strain",24,M,0
+"Severe headache in 35 year old with fever",35,F,2
+"Worst headache of life in 40 year old",40,M,2
+"Severe headache with stiff neck in 38 year old",38,F,2
+"Acute severe headache in 42 year old",42,M,2
+"Severe headache with vision changes in 36 year old",36,F,2
+"Worst headache ever in 44 year old",44,M,2
+"Severe headache with confusion in 39 year old",39,F,2
+"Acute headache with fever in 41 year old",41,M,2
+"Severe headache with weakness in 37 year old",37,F,2
+"Worst headache with nausea in 43 year old",43,M,2
+"Runny nose in young child",5,F,0
+"Mild cough in toddler",3,M,0
+"Slight fever in young child",4,F,0
+"Runny nose and cough in 6 year old",6,M,0
+"Mild cold symptoms in child",7,F,0
+"Slight congestion in young child",5,M,0
+"Runny nose with sneezing in child",8,F,0
+"Mild cough with runny nose in 4 year old",4,M,0
+"Slight sore throat in young child",6,F,0
+"Mild fever with cough in child",5,M,0
+"Severe fever in elderly with confusion",85,M,1
+"High fever in senior with weakness",83,F,1
+"Persistent fever in 80 year old",80,M,1
+"Fever with chills in elderly",81,F,1
+"High fever in senior patient",82,M,1
+"Fever with fatigue in 79 year old",79,F,1
+"Severe fever in elderly",84,M,1
+"Persistent fever in senior",86,F,1
+"High fever with malaise in 77 year old",77,M,1
+"Fever with body aches in elderly",78,F,1
+"Abdominal pain in young adult",26,M,1
+"Stomach pain in 28 year old",28,F,1
+"Abdominal discomfort in 25 year old",25,M,1
+"Stomach pain with nausea in 27 year old",27,F,1
+"Abdominal pain with vomiting in 24 year old",24,M,1
+"Stomach discomfort in 29 year old",29,F,1
+"Abdominal pain after eating in 26 year old",26,M,1
+"Stomach pain with diarrhea in 28 year old",28,F,1
+"Abdominal discomfort in 25 year old",25,M,1
+"Stomach pain in 30 year old",30,F,1
+"Severe abdominal pain in elderly",87,M,2
+"Acute abdominal pain in senior",85,F,2
+"Severe stomach pain in 88 year old",88,M,2
+"Acute abdominal pain with vomiting in elderly",86,F,2
+"Severe stomach pain in 89 year old",89,M,2
+"Acute abdominal pain in senior",84,F,2
+"Severe stomach pain with bleeding in elderly",90,M,2
+"Acute abdominal pain in 83 year old",83,F,2
+"Severe stomach pain in senior",91,M,2
+"Acute abdominal pain in elderly",82,F,2
+"Mild sore throat in young adult",21,F,0
+"Light throat pain in 22 year old",22,M,0
+"Slight sore throat in 20 year old",20,F,0
+"Mild throat discomfort in 23 year old",23,M,0
+"Light sore throat in 21 year old",21,F,0
+"Slight throat pain in 24 year old",24,M,0
+"Mild sore throat in 19 year old",19,F,0
+"Light throat discomfort in 25 year old",25,M,0
+"Slight sore throat in 22 year old",22,F,0
+"Mild throat pain in 23 year old",23,M,0
+"Severe sore throat with fever in 35 year old",35,F,1
+"Acute throat pain with difficulty swallowing in 38 year old",38,M,1
+"Severe sore throat with fever in 36 year old",36,F,1
+"Acute throat pain in 40 year old",40,M,1
+"Severe sore throat with swelling in 37 year old",37,F,1
+"Acute throat pain with fever in 39 year old",39,M,1
+"Severe sore throat in 34 year old",34,F,1
+"Acute throat pain with difficulty swallowing in 41 year old",41,M,1
+"Severe sore throat with fever in 35 year old",35,F,1
+"Acute throat pain in 42 year old",42,M,1
+"Difficulty breathing in young adult",26,M,2
+"Shortness of breath in 28 year old",28,F,2
+"Severe breathing difficulty in 25 year old",25,M,2
+"Acute shortness of breath in 27 year old",27,F,2
+"Difficulty breathing with chest pain in 29 year old",29,M,2
+"Severe shortness of breath in 24 year old",24,F,2
+"Acute breathing difficulty in 30 year old",30,M,2
+"Shortness of breath with wheezing in 26 year old",26,F,2
+"Severe difficulty breathing in 28 year old",28,M,2
+"Acute shortness of breath in 25 year old",25,F,2
+"Mild fatigue in young adult",22,F,0
+"Light tiredness in 21 year old",21,M,0
+"Slight fatigue in 23 year old",23,F,0
+"Mild tiredness in 20 year old",20,M,0
+"Light fatigue in 24 year old",24,F,0
+"Slight tiredness in 22 year old",22,M,0
+"Mild fatigue in 25 year old",25,F,0
+"Light tiredness in 21 year old",21,F,0
+"Slight fatigue in 26 year old",26,M,0
+"Mild tiredness in 23 year old",23,F,0
+"Severe fatigue in elderly",88,M,1
+"Acute fatigue in senior",86,F,1
+"Severe tiredness in 85 year old",85,M,1
+"Acute fatigue with weakness in elderly",87,F,1
+"Severe fatigue in 89 year old",89,M,1
+"Acute tiredness in senior",84,F,1
+"Severe fatigue with dizziness in elderly",90,M,1
+"Acute fatigue in 83 year old",83,F,1
+"Severe tiredness in senior",91,M,1
+"Acute fatigue in elderly",82,F,1
+"Nausea in young adult",25,M,0
+"Slight nausea in 26 year old",26,F,0
+"Mild nausea in 24 year old",24,M,0
+"Light nausea in 27 year old",27,F,0
+"Slight nausea in 23 year old",23,M,0
+"Mild nausea in 28 year old",28,F,0
+"Light nausea in 22 year old",22,M,0
+"Slight nausea in 29 year old",29,F,0
+"Mild nausea in 21 year old",21,M,0
+"Light nausea in 30 year old",30,F,0
+"Severe nausea with vomiting in 40 year old",40,M,1
+"Acute nausea with vomiting in 38 year old",38,F,1
+"Severe nausea in 42 year old",42,M,1
+"Acute nausea with diarrhea in 36 year old",36,F,1
+"Severe nausea with fever in 41 year old",41,M,1
+"Acute nausea in 39 year old",39,F,1
+"Severe nausea with weakness in 37 year old",37,M,1
+"Acute nausea with vomiting in 43 year old",43,F,1
+"Severe nausea in 35 year old",35,M,1
+"Acute nausea in 44 year old",44,F,1
+"Dizziness in young adult",24,M,0
+"Light dizziness in 25 year old",25,F,0
+"Slight dizziness in 23 year old",23,M,0
+"Mild dizziness in 26 year old",26,F,0
+"Light dizziness in 22 year old",22,M,0
+"Slight dizziness in 27 year old",27,F,0
+"Mild dizziness in 21 year old",21,F,0
+"Light dizziness in 28 year old",28,M,0
+"Slight dizziness in 24 year old",24,F,0
+"Mild dizziness in 29 year old",29,M,0
+"Severe dizziness in elderly",87,M,1
+"Acute dizziness in senior",85,F,1
+"Severe dizziness with balance problems in 86 year old",86,M,1
+"Acute dizziness in elderly",88,F,1
+"Severe dizziness with falls in 84 year old",84,M,1
+"Acute dizziness in senior",89,F,1
+"Severe dizziness with confusion in elderly",83,M,1
+"Acute dizziness in 90 year old",90,F,1
+"Severe dizziness in senior",91,M,1
+"Acute dizziness in elderly",82,F,1
+"Cough in young adult",23,F,0
+"Light cough in 24 year old",24,M,0
+"Slight cough in 22 year old",22,F,0
+"Mild cough in 25 year old",25,M,0
+"Light cough in 21 year old",21,F,0
+"Slight cough in 26 year old",26,M,0
+"Mild cough in 20 year old",20,F,0
+"Light cough in 27 year old",27,M,0
+"Slight cough in 23 year old",23,F,0
+"Mild cough in 28 year old",28,M,0
+"Severe cough with blood in 50 year old",50,M,1
+"Acute cough with fever in 52 year old",52,F,1
+"Severe cough in 48 year old",48,M,1
+"Acute cough with shortness of breath in 54 year old",54,F,1
+"Severe cough with chest pain in 51 year old",51,M,1
+"Acute cough in 53 year old",53,F,1
+"Severe cough with phlegm in 49 year old",49,M,1
+"Acute cough with fever in 55 year old",55,F,1
+"Severe cough in 47 year old",47,M,1
+"Acute cough with difficulty breathing in 56 year old",56,F,1
+"Rash in young child",6,M,0
+"Slight rash in 5 year old",5,F,0
+"Mild rash in 7 year old",7,M,0
+"Light rash in 4 year old",4,F,0
+"Slight rash in 8 year old",8,M,0
+"Mild rash in 3 year old",3,F,0
+"Light rash in 9 year old",9,M,0
+"Slight rash in 6 year old",6,F,0
+"Mild rash in 10 year old",10,M,0
+"Light rash in 5 year old",5,F,0
+"Severe rash with fever in 35 year old",35,M,1
+"Acute rash spreading in 38 year old",38,F,1
+"Severe rash with itching in 36 year old",36,M,1
+"Acute rash with fever in 40 year old",40,F,1
+"Severe rash in 37 year old",37,M,1
+"Acute rash with swelling in 39 year old",39,F,1
+"Severe rash with fever in 34 year old",34,M,1
+"Acute rash in 41 year old",41,F,1
+"Severe rash with difficulty breathing in 35 year old",35,M,2
+"Acute rash with anaphylaxis in 42 year old",42,F,2
+"Joint pain in young adult",26,M,0
+"Light joint pain in 25 year old",25,F,0
+"Slight joint pain in 27 year old",27,M,0
+"Mild joint pain in 24 year old",24,F,0
+"Light joint pain in 28 year old",28,M,0
+"Slight joint pain in 23 year old",23,F,0
+"Mild joint pain in 29 year old",29,M,0
+"Light joint pain in 22 year old",22,F,0
+"Slight joint pain in 30 year old",30,M,0
+"Mild joint pain in 21 year old",21,F,0
+"Severe joint pain in elderly",87,M,1
+"Acute joint pain in senior",85,F,1
+"Severe joint pain with swelling in 86 year old",86,M,1
+"Acute joint pain in elderly",88,F,1
+"Severe joint pain with stiffness in 84 year old",84,M,1
+"Acute joint pain in senior",89,F,1
+"Severe joint pain with fever in elderly",83,M,1
+"Acute joint pain in 90 year old",90,F,1
+"Severe joint pain in senior",91,M,1
+"Acute joint pain in elderly",82,F,1
+"Back pain in young adult",25,M,0
+"Light back pain in 26 year old",26,F,0
+"Slight back pain in 24 year old",24,M,0
+"Mild back pain in 27 year old",27,F,0
+"Light back pain in 23 year old",23,M,0
+"Slight back pain in 28 year old",28,F,0
+"Mild back pain in 22 year old",22,M,0
+"Light back pain in 29 year old",29,F,0
+"Slight back pain in 21 year old",21,M,0
+"Mild back pain in 30 year old",30,F,0
+"Severe back pain in elderly",88,M,1
+"Acute back pain in senior",86,F,1
+"Severe back pain with numbness in 87 year old",87,M,1
+"Acute back pain in elderly",89,F,1
+"Severe back pain with weakness in 85 year old",85,M,1
+"Acute back pain in senior",90,F,1
+"Severe back pain with difficulty walking in elderly",84,M,1
+"Acute back pain in 91 year old",91,F,1
+"Severe back pain in senior",83,M,1
+"Acute back pain in elderly",92,F,1

@@ -69,16 +69,31 @@ def initialize_agents():
     logger.info("Starting Medical Symptoms Checker API...")
     
     try:
-        from src.model_inference import load_model
-        model_loaded = load_model()
-        agent_status["model_loaded"] = model_loaded
-        if model_loaded:
-            logger.info("ML model loaded successfully")
-        else:
-            logger.warning("ML model not loaded - using fallback logic")
+        # Try to load improved model first (with age/gender support)
+        try:
+            from src.improved_model_inference import load_model
+            model_loaded = load_model()
+            if model_loaded:
+                logger.info("✅ Improved ML model (age/gender-aware) loaded successfully")
+                agent_status["model_loaded"] = True
+                agent_status["model_type"] = "improved_hybrid"
+            else:
+                logger.warning("Improved model not available, trying standard model...")
+                raise Exception("Improved model not loaded")
+        except:
+            # Fallback to standard model
+            from src.model_inference import load_model
+            model_loaded = load_model()
+            agent_status["model_loaded"] = model_loaded
+            agent_status["model_type"] = "standard"
+            if model_loaded:
+                logger.info("Standard ML model loaded successfully")
+            else:
+                logger.warning("ML model not loaded - using fallback logic")
     except Exception as e:
         logger.error(f"Error loading ML model: {str(e)}")
         agent_status["model_loaded"] = False
+        agent_status["model_type"] = "none"
     
     try:
         from src.rules_apriori import load_apriori_rules
