@@ -1,0 +1,5 @@
+# Ignore frontend folder for backend deployment
+frontend/
+node_modules/
+.git/
+*.md
