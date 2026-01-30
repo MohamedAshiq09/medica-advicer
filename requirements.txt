@@ -1,2 +1,10 @@
-# This file tells Railway to look in backend/requirements.txt
--r backend/requirements.txt
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.6
+python-multipart==0.0.20
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.2.2
+joblib==1.4.2
+mlxtend==0.23.3
+python-dotenv==1.0.1
