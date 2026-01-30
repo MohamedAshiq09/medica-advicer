@@ -1,14 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { SymptomInput } from '@/types/api'
+import { SymptomInput } from '../types/api'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from './ui/select'
 
 interface SymptomFormProps {
   onSubmit: (data: SymptomInput) => void

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { SymptomInput } from '@/types/api'
+import { SymptomInput } from '../types/api'
 import SymptomForm from './SymptomForm'
 import ResultsDisplay from './ResultsDisplay'
 import LoadingSpinner from './LoadingSpinner'

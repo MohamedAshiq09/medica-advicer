@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import SymptomChecker from '@/components/SymptomChecker'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import SymptomChecker from '../components/SymptomChecker'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const [showChecker, setShowChecker] = useState(false)

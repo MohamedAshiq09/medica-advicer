@@ -1,6 +1,6 @@
 'use client'
 
-import { TriageResponse } from '@/types/api'
+import { TriageResponse } from '../types/api'
 
 interface ResultsDisplayProps {
   results: TriageResponse
