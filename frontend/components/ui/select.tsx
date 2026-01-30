@@ -3,8 +3,12 @@
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react"
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
 
-import { cn } from "../../lib/utils"
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
 
 function Select({
   ...props
