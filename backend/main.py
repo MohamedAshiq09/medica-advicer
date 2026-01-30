@@ -19,8 +19,9 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "https://*.vercel.app",  # Your Vercel preview deployments
-        "https://your-domain.com",  # Replace with your actual domain
+        "https://medica-advicer-3x38.vercel.app",
+        "https://medica-advicer-3x38-git-master-mohamed-ashiqs-projects.vercel.app",
+        "https://*.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
