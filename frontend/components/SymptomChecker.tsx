@@ -16,8 +16,10 @@ export default function SymptomChecker() {
     setError(null)
     setResults(null)
 
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001'
+
     try {
-      const response = await fetch('http://localhost:8001/check_symptoms', {
+      const response = await fetch(`${apiUrl}/check_symptoms`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
